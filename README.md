@@ -1,2 +1,5 @@
 # WinLinux
-Windows on Linux !
+
+## ATTENTION ! Cette application ne fonctionne que sur les distributions Linux : Ubuntu et Debian, Windows ne peut pas executez l'application !
+
+Windows sur Linux
