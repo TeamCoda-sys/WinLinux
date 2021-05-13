@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+import win
+import win_socket
+print("Windows Terminal for Linux\n\n*\n* Created by Holia\n*\n")
+def main():
+    a = input("C:>")
+    if a == "help":
+        print("HELP PAGE FOR WINDOWS LINUX : \n______________________________\n\nver : Current version of Windows for Linux\nxcopy : Copy file to another dir\ncls : Clear the screen\ncmddir : Directory of CMD\nexit : shutdown windows\ncmd : Command Prompt\nipconfig : show network information")
+        main()
+
+    if a == "xcopy":
+        fff = input("Source : ")
+        dddd = input("Directory : ")
+        win.xcopy(fff, dddd)
+        main()
+    
+    if a == "ver":
+        win.ver()
+        main()
+
+    if a == "cls":
+        win.cls()
+
+    if a == "exit":
+        win.ext()
+
+    if a == "cmddir":
+        win.cmddir()
+
+    if a == "cmd":
+        win.cmd()
+
+    if a == "ipconfig":
+        win_socket.ipconfig()
+
+    if a == "set":
+        win.set()
+
+    if a == "":
+        main()
+
+    else:
+        main()
+
+main()
